@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>LOVE CAPS</title>
+		
+		<style>
+			body{background-color: darksalmon;}
+			
+			#logo{width: 200px;
+			height: 70px;
+			margin-top:10px;
+			margin-left: 18px }
+			
+			#menuprincipal{width: 500px;
+			height: 40px;
+			float:left;
+			margin-top:20px;
+			margin-left: -17px}
+			
+			#menugeneral{width: 500px;
+			height: 40px;
+			margin-left: 860px;}
+			
+			#Busqueda{width: 640px;
+			height: 55px;
+			background-color: #FFFFFF;
+			margin: 0px -35px 0 200px;
+			float:right;}
+			
+			h1{color: #FFFFFF;
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+			text-align: center;
+			font-size: 22px;
+			margin:100px 0px 1000px -1820px;}
+			
+			#boletin{width: 1320px;
+			height: 400px;
+			margin:10px 10px 10px 21px;}
+			
+			#imagenpublicitaria2{width: 1320px;
+			height: 400px;
+			background-color: #899063;
+			background-image: url("Imagenes/PUBLICIDAD22.jpg");
+			margin:10px 10px 10px 21px;}
+			
+			#productos{width: 1320px;
+			height: 400px;
+			background-color:darksalmon;
+			margin:200px 10px 10px 21px;}
+			
+			#productosimagenes{width: 1320px;
+			height: 400px;
+			background-color:darksalmon;
+			margin:10px 10px 10px 21px;}
+					
+			/*BUSQUEDA*/
+			#busqueda2{width: 200px;
+			height: 30px;
+			background-color: #D4E1D1;
+			margin:-1120px 20px 0px 430px;
+			float:left;}
+			
+			/*PRODUCTOS*/
+			#comparar{width: 200px;
+			height: 30px;
+			background-color: #D4E1D1;
+			margin:8px 20px 15px 20px;
+			float:left;}
+			
+			#seleccionar{width: 300px;
+			height: 30px;
+			background-color: #D4E1D1;
+			margin:3px 20px 15px 20px;
+			float:left;}
+			
+			#cuadros{width: 90px;
+			height: 30px;
+			margin:3px 20px 15px 20px;
+			float:left;}
+			
+			
+			/*PRODUCTOS IMAGENES*/
+					
+			/*BOLETIN*/
+			#envios{width: 200px;
+			height: 200px;
+			background-color: #D4E1D1;
+			margin:30px 20px 0px 40px;
+			float:left;}
+			
+			#obsequios{width: 200px;
+			height: 200px;
+			background-color: #D4E1D1;
+			margin:30px 20px 0px 40px;
+			float:left;}
+			
+			#paga{width: 200px;
+			height: 200px;
+			background-color: #D4E1D1;
+			margin:30px 20px 0px 40px;
+			float:left;}
+			
+			#gratisenvio{width: 200px;
+			height: 200px;
+			background-color: #D4E1D1;
+			margin:30px 20px 0px 40px;
+			float:left;}
+			
+			#contacto{width: 200px;
+			height: 200px;
+			background-color: #D4E1D1;
+			margin:30px 20px 0px 40px;
+			float:left;}
+			
+			#suscribete{width: 300px;
+			height: 80px;
+			background-color: #D4E1D1;
+			margin:50px 500px 500px 500px;
+			float:left;}
+			
+			/*NOVEDADES*/
+			#logo2{width: 300px;
+			height: 300px;
+			background-color: #D4E1D1;
+			margin:50px 20px 0px 100px;
+			float:left;}
+			
+			#texto1{width: 200px;
+			height: 200px;
+			margin:100px 20px 0px 50px;
+			float:left;}
+			
+			#texto2{width: 200px;
+			height: 200px;
+			margin:100px 20px 0px 50px;
+			float:left;}
+			
+			#texto3{width: 200px;
+			height: 200px;
+			margin:100px 20px 0px 50px;
+			float:left;}
+			
+			#texto4{width: 300px;
+			height: 30px;
+			background-color: #D4E1D1;
+			margin:20px 20px 0px 490px;
+			float:left;}
+			
+			/*MENU GENERAL*/
+			*{margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;}
+
+			#menugeneral ul{width: -1000px;
+			height: 50px;
+			margin: 0 auto;}
+			
+			#menugeneral li{width: 100px;
+			height: 50px;
+			float:right;
+			margin:0 0 0 20px;}
+
+			#menugeneral a{color:#FFFFFF;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			background-color:darksalmon;
+			background-image:; 
+			width: 100px;
+			height: 40px;
+			display:block;
+			text-align: center;
+			padding: 10px 0 0 0;}
+
+			#menugeneral a:hover{background-color:salmon;
+			color: #1E8C5B;
+			height: 30px;}
+
+			#menugeneral a:active{background-color: #E5E5E5;
+			color: #FFFFFF}
+			
+			/*MENU PRINCIPAL*/
+
+			#menuprincipal ul{width: -1000px;
+			height: 50px;
+			margin: 0 auto;}
+			
+			#menuprincipal li{width: 100px;
+			height: 50px;
+			float:right;
+			margin:0 0 0 20px;}
+
+			#menuprincipal a{color:#FFFFFF;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			background-color:darksalmon;
+			width: 100px;
+			height: 40px;
+			display:block;
+			text-align: center;
+			padding: 10px 0 0 0;}
+
+			#menuprincipal a:hover{background-color:salmon;
+			color: #1E8C5B;
+			height: 30px;}
+
+			#menuprincipal a:active{background-color: #E5E5E5;
+			color: #FFFFFF}
+			
+			/*TEXTO 1*/
+			*{margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;}
+
+			#texto1 ul{width: -1000px;
+			height: 50px;
+			margin: 0 auto;}
+			
+			#texto1 li{width: 100px;
+			height: 50px;
+			float:right;
+			margin:0 0 0 20px;}
+
+			#texto1 a{color:lightsalmon;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			background-image:; 
+			width: 100px;
+			height: 40px;
+			display:block;
+			text-align: center;
+			padding: 0px 0 0 0;}
+
+			#texto1 a:hover{background-color:rgba(202,199,213,1.00);
+			color:lightsalmon;
+			height: 50px;}
+
+			#texto1 a:active{background-color:lightsalmon;
+			color:lightsalmon}
+			
+			/*TEXTO 2*/
+			*{margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;}
+
+			#texto2 ul{width: -1000px;
+			height: 50px;
+			margin: 0 auto;}
+			
+			#texto2 li{width: 100px;
+			height: 50px;
+			float:right;
+			margin:0 0 0 20px;}
+
+			#texto2 a{color:lightsalmon;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			background-image:; 
+			width: 100px;
+			height: 40px;
+			display:block;
+			text-align: center;
+			padding: 0px 0 0 0;}
+
+			#texto2 a:hover{background-color:rgba(202,199,213,1.00);
+			color:lightsalmon;
+			height: 50px;}
+
+			#texto2 a:active{background-color:lightsalmon;
+			color:lightsalmon}
+			
+			/*TEXTO 3*/
+			*{margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;}
+
+			#texto3 ul{width: -1000px;
+			height: 50px;
+			margin: 0 auto;}
+			
+			#texto3 li{width: 100px;
+			height: 50px;
+			float:right;
+			margin:0 0 0 20px;}
+
+			#texto3 a{color:lightsalmon;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			background-image:; 
+			width: 100px;
+			height: 40px;
+			display:block;
+			text-align: center;
+			padding: 0px 0 0 0;}
+
+			#texto3 a:hover{background-color:rgba(202,199,213,1.00);
+			color:lightsalmon;
+			height: 50px;}
+
+			#texto3 a:active{background-color:lightsalmon;
+			color:lightsalmon}
+		
+			
+		</style>
+		
+	</head>
+	
+
+	<body>
+		<div id="logo">
+			<img src="Imagenes/logo.png"/>
+		</div>
+		<div class="social-bar">
+			<a href="https://www.facebook.com/" class="icon icon-facebook2" target="_blank"></a>
+			<a href="https://www.instagram.com/" class="icon icon-instagram" target="_blank"></a>
+			<a href="https://www.whatsapp.com/" class="icon icon-whatsapp" target="_blank"></a>
+					</div>
+		<div id="menugeneral">
+	<nav>
+		<ul>
+			<li><a href="#">Idioma</a></li>
+			<li><a href="#">Mi cuenta</a></li>
+			<li><a href="#">Carrito</a></li>
+		</ul>
+	</nav>
+		</div>
+		
+		<div id="menuprincipal">
+		<nav>
+		<ul>
+			<li><a href="ofertas.html">OFERTA</a></li>
+			<li><a href="#">TIENDA</a></li>
+			<li><a href="nosotros.html">NOSOTROS</a></li>
+			<li><a href="Index.html">INICIO</a></li>
+		</ul>
+		</nav>
+		</div>
+		
+		<div id="Busqueda">
+			<h1>PAGOS</h1>
+			<div id="busqueda2">
+			<img src="Imagenes/BUSQUEDA.png"/>
+			</div>
+		</div>
+			
+		<div id="productos">
+			<div id="comparar">
+			<img src="Imagenes/COMPARAR.jpg"/>
+			</div>
+			
+			<div id="seleccionar">
+			<img src="Imagenes/SELECCIONAR.jpg"/>
+			</div>
+			
+			<div id="cuadros">
+			<img src="Imagenes/BOTON.png"/>
+			</div>
+			
+			<div id="pagos">
+			<img src="Imagenes/PAGOS.jpg345.jpg"/>
+			</div>
+		</div>
+		
+		<div id="productosimagenes"></div>
+			
+		<div id="boletin">
+			<div id="envios">
+			<img src="Imagenes/ENVIOS.jpg"/>
+			</div>
+			
+			<div id="obsequios">
+			<img src="Imagenes/OBSEQUIOS.png"/>	
+			</div>
+			
+			<div id="paga">
+			<img src="Imagenes/PAGA.jpg"/>
+			</div>
+			
+			<div id="gratisenvio">
+			<img src="Imagenes/ENVIO-GRATIS.png"/>
+			</div>
+			
+			<div id="contacto">
+			<img src="Imagenes/CONTACTO.jpg"/>	
+			</div>
+			
+			<div id="suscribete">
+			<img src="Imagenes/SUSCRIBETE.jpg"/>	
+			</div>
+		</div>
+		
+		<div id="imagenpublicitaria2">
+			
+		</div>
+		
+		<div id="novedades">
+		
+		</div>
+			
+		
+
+	</body>
+</html>
